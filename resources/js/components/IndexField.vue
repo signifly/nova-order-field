@@ -103,15 +103,12 @@ export default {
   methods: {
     reorderResource(direction) {
       Nova.request()
-        .post(
-          `/nova-vendor/michielkempen/nova-order-field/${this.resourceName}`,
-          {
-            direction: direction,
-            field: this.field.attribute,
-            resource: this.resourceName,
-            resourceId: this.resourceId
-          }
-        )
+        .post(`/nova-vendor/signifly/nova-order-field/${this.resourceName}`, {
+          direction: direction,
+          field: this.field.attribute,
+          resource: this.resourceName,
+          resourceId: this.resourceId
+        })
         .then(() => {
           this.$toasted.show(this.__("The new order has been set!"), {
             type: "success"
