@@ -1,13 +1,13 @@
 <?php
 
-namespace MichielKempen\NovaOrderField;
+namespace Signifly\Nova\Fields\Order;
 
 use Illuminate\Support\Facades\Route;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\ServiceProvider;
 
-class OrderFieldServiceProvider extends ServiceProvider
+class FieldServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.

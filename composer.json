@@ -1,9 +1,10 @@
 {
-    "name": "michielkempen/nova-order-field",
-    "description": "A Laravel Nova field.",
+    "name": "signifly/nova-order-field",
+    "description": "A Laravel Nova Order field based on spatie/eloquent-sortable.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "ordering"
     ],
     "license": "MIT",
     "require": {
@@ -12,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "MichielKempen\\NovaOrderField\\": "src/"
+            "Signifly\\Nova\\Fields\\Order\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MichielKempen\\NovaOrderField\\OrderFieldServiceProvider"
+                "Signifly\\Nova\\Fields\\Order\\FieldServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace MichielKempen\NovaOrderField\Http;
+namespace Signifly\Nova\Fields\Order\Http;
 
 use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -22,10 +22,18 @@ class OrderFieldRequestHandler extends Controller
 
         $direction = $request->get('direction');
 
-        if($direction == 'up') {
-            $model->moveOrderUp();
-        } else {
-            $model->moveOrderDown();
+        switch ($direction) {
+            case 'up':
+                $model->moveOrderUp();
+                // no break
+            case 'top':
+                $model->moveToStart();
+                // no break
+            case 'bottom':
+                $model->moveToEnd();
+                // no break
+            case 'down':
+                $model->moveOrderDown();
         }
     }
 }
