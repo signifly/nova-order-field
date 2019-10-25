@@ -48,7 +48,7 @@
     <button
       v-if="field.first != resourceId"
       @click="reorderResource('top')"
-      class="cursor-pointer text-70 hover:text-primary"
+      class="cursor-pointer text-70 hover:text-primary mr-3"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

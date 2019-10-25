@@ -6,7 +6,7 @@ use Illuminate\Routing\Controller;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Spatie\EloquentSortable\Sortable;
 
-class OrderFieldRequestHandler extends Controller
+class FieldRequestHandler extends Controller
 {
     /**
      * @param  NovaRequest $request

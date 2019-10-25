@@ -43,8 +43,8 @@ This will restrict the calculations to fields value of the model instance.
 ### Example
 
 ```php
-use MichielKempen\NovaOrderField\Orderable;
-use MichielKempen\NovaOrderField\OrderField;
+use Signifly\Nova\Fields\Order\Orderable;
+use Signifly\Nova\Fields\Order\OrderField;
 
 class Page extends Resource
 {
