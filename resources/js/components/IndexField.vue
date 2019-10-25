@@ -12,6 +12,7 @@
       </svg>-->
       bottom
     </button>
+
     <button
       v-if="field.last != resourceId"
       @click="reorderResource('down')"
@@ -33,6 +34,7 @@
         <line x1="12" x2="12" y1="8" y2="16" />
       </svg>
     </button>
+
     <button
       v-if="field.first != resourceId"
       @click="reorderResource('up')"
@@ -54,6 +56,7 @@
         <line x1="12" x2="12" y1="16" y2="8" />
       </svg>
     </button>
+
     <button
       v-if="field.first != resourceId"
       @click="reorderResource('top')"

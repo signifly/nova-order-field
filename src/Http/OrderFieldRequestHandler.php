@@ -25,15 +25,18 @@ class OrderFieldRequestHandler extends Controller
         switch ($direction) {
             case 'up':
                 $model->moveOrderUp();
-                // no break
+                break;
             case 'top':
                 $model->moveToStart();
-                // no break
+                break;
             case 'bottom':
                 $model->moveToEnd();
-                // no break
+                break;
             case 'down':
                 $model->moveOrderDown();
+                break;
+            default:
+                break;
         }
     }
 }
