@@ -26,7 +26,7 @@
         stroke-linejoin="round"
         stroke-width="2"
         viewBox="0 0 24 24"
-        class="fill-white"
+        class="fill-transparent"
       >
         <circle cx="12" cy="12" r="10" />
         <polyline points="8 12 12 16 16 12" />
