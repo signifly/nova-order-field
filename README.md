@@ -62,3 +62,4 @@ class Page extends Resource
 ```
 
 Thank you to Michiel Kempen for his initial work.
+
